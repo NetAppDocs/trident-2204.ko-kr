@@ -2853,7 +2853,6 @@
   <block id="6f0b081bef5e745ef2429ef74472d9bd" category="cell">v1.21.0</block>
   <block id="681d715b456f6d29a501b8f132e941a1" category="cell">v1.22.0</block>
   <block id="73e93ad328287e5ce4c06228cfdba2bf" category="cell">v1.23.0</block>
-  <block id="01d360dd9f635f6518aed5070edf488f" category="admonition">Kubernetes 버전 1.20 이상에서는 검증된 k8s.gcr.io/sig-storage/scsi-snapshotter:v4.x 이미지를 사용하십시오. v1 버전이 'volumesnapshots.snapshots.storage.k8s.io' CRD를 지원하는 경우에만 해당됩니다. v1beta1 버전이 v1 버전 없이 CRD를 지원하는 경우 검증된 k8s.gcr.io/sig-storage/scsi-snapshotter:v3.x 이미지를 사용하십시오.</block>
   <block id="732d0805e41f2db48aa120c357324ee4" category="summary">Trident 운영자나 tridentctl을 사용하여 Astra Trident를 배포할 수 있습니다.</block>
   <block id="42f8643eb52a942747937327c72c8361" category="doc">구축 개요</block>
   <block id="deef9d6bf4083f81d7bd15ae0c9121b6" category="admonition">22.04 릴리즈부터는 Astra Trident가 설치될 때마다 AES 키가 더 이상 다시 생성되지 않습니다. 이 릴리즈를 통해 Astra Trident는 설치 전반에 걸쳐 유지되는 새로운 비밀 객체를 설치합니다. 즉, 22.04의 tridentctl은 Trident의 이전 버전을 제거할 수 있지만 이전 버전에서는 22.04 설치를 제거할 수 없습니다.</block>
@@ -3168,4 +3167,5 @@
   <block id="c949166d6970748c0094c800daa3324a" category="sidebar">Astra Trident 관리</block>
   <block id="58eaebf972358f1cf03d386a4ade1a0f" category="sidebar">다음 단계</block>
   <block id="0460583622f03a52d7693094d6fa2452" category="sidebar">개념</block>
+  <block id="12ff25435e42ce4eb51634e6d4a5e06c" category="admonition">Kubernetes 버전 1.20 이상에서는 검증된 k8s.gcr.io/sig-storage/scsi-snapshotter:v5.x 이미지를 사용하십시오. v1 버전이 'volumesnapshots.snapshots.storage.k8s.io' CRD를 지원하는 경우에만 해당됩니다. v1beta1 버전이 v1 버전 없이 CRD를 지원하는 경우 검증된 k8s.gcr.io/sig-storage/scsi-snapshotter:v3.x 이미지를 사용하십시오.</block>
 </blocks>
