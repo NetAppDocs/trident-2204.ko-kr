@@ -1822,7 +1822,6 @@
   <block id="8b4e612e7ec021b91bdf46a69c393a75" category="paragraph">이는 가상 스토리지 풀과 해당 레이블의 강력한 성능을 긁는 것입니다.</block>
   <block id="4cfa22b281cbd36e1a275d61ec23a9b4" category="summary">문제 해결에 도움이 되는 로그를 수집할 수 있습니다. 로그를 수집하는 방법은 Docker 플러그인을 실행하는 방법에 따라 다릅니다.</block>
   <block id="fe1786b49549e8e06a89b9c57d7fc514" category="doc">로그를 수집합니다</block>
-  <block id="d24bae93d00d821b3a8e7ee57c3bd468" category="section-title">문제 해결을 위한 로그를 수집합니다</block>
   <block id="83f4d02d2dd31f09291e098bf4ae502b" category="list-text">권장 관리 플러그인 방법(예: docker plugin 명령 사용)을 사용하여 Astra Trident를 실행 중인 경우 다음과 같이 봅니다.</block>
   <block id="17c40798131b12188d43b1a90dabfc69" category="paragraph">표준 로깅 수준에서는 대부분의 문제를 진단할 수 있어야 합니다. 충분하지 않은 경우 디버그 로깅을 활성화할 수 있습니다.</block>
   <block id="c28722abec5c1daefa02916119bbff91" category="list-text">디버그 로깅을 사용하려면 디버그 로깅을 사용하도록 설정한 플러그인을 설치합니다.</block>
@@ -3168,4 +3167,5 @@
   <block id="58eaebf972358f1cf03d386a4ade1a0f" category="sidebar">다음 단계</block>
   <block id="0460583622f03a52d7693094d6fa2452" category="sidebar">개념</block>
   <block id="12ff25435e42ce4eb51634e6d4a5e06c" category="admonition">Kubernetes 버전 1.20 이상에서는 검증된 k8s.gcr.io/sig-storage/scsi-snapshotter:v5.x 이미지를 사용하십시오. v1 버전이 'volumesnapshots.snapshots.storage.k8s.io' CRD를 지원하는 경우에만 해당됩니다. v1beta1 버전이 v1 버전 없이 CRD를 지원하는 경우 검증된 k8s.gcr.io/sig-storage/scsi-snapshotter:v3.x 이미지를 사용하십시오.</block>
+  <block id="756909f99bc1a720d318a5f5b94eb094" category="section-title">문제 해결을 위해 로그를 수집합니다</block>
 </blocks>
