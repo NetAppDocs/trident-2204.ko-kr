@@ -143,6 +143,17 @@
               $("#mysidebar").navgoco('toggle', true);
           });
 
+          $(".sidebar-nav-container").on("scroll", function() {
+            $.cookie("sidebarScroll", $(".sidebar-nav-container").scrollTop(), {
+              path    : "/ko-kr/trident-2204"  
+            });
+          });
+          $(function() {
+            if ($.cookie("sidebarScroll")) {
+              $(".sidebar-nav-container").scrollTop($.cookie("sidebarScroll"));
+            }
+          });
+
       });
 
   </script>
@@ -294,6 +305,8 @@
         </a>
       </div>
 
+      
+      
       
       <div class="search-property-bar">
         <div id="search-demo-container" class="searchbox n-property-bar__search">
@@ -883,7 +896,7 @@
     $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
   });
 </script><div class="prod-nav" id="product-nav">
-  <a target="_self" class="prod-fam-nav" href="https://docs.netapp.com/ko-kr/astra-family/"><img src="/ko-kr/trident-2204/images/left_arrow.png" alt=""><pre>All Astra documentation</pre></a>
+  <a target="_self" class="prod-fam-nav" href="https://docs.netapp.com/ko-kr/astra-family/"><img src="/ko-kr/trident-2204/images/left_arrow.png" alt=""><pre>모든 Astra 문서</pre></a>
 </div><div class="sidebar-nav-container" id="mysidebardiv">
   <ul id="mysidebar" class="nav"><li 
       data-pdf-exists="true" 
@@ -907,7 +920,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> 개념</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Astra Trident 소개"
@@ -958,7 +971,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> 시작하십시오</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="시도해 보십시오"
@@ -988,7 +1001,7 @@
     ><a href="/ko-kr/trident-2204/trident-get-started/kubernetes-deploy-operator.html">
         <div class="na-navbar-padding"> Trident 연산자를 사용하여 구축</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Trident 운영자 배포를 사용자 지정합니다"
@@ -1004,7 +1017,7 @@
     ><a href="/ko-kr/trident-2204/trident-get-started/kubernetes-deploy-tridentctl.html">
         <div class="na-navbar-padding"> tridentctl을 사용하여 배포합니다</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="tridentctl 배포를 사용자 지정합니다"
@@ -1027,7 +1040,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Astra Trident 관리</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Astra Trident를 업그레이드합니다"
@@ -1071,7 +1084,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Astra Trident를 사용해 보십시오</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="백엔드 구성"
@@ -1080,7 +1093,7 @@
     ><a href="/ko-kr/trident-2204/trident-use/backends.html">
         <div class="na-navbar-padding"> 백엔드 구성</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="ANF 백엔드를 구성합니다"
@@ -1110,7 +1123,7 @@
     ><a href="/ko-kr/trident-2204/trident-use/ontap-san.html">
         <div class="na-navbar-padding"> ONTAP SAN 드라이버를 사용하여 백엔드를 구성합니다</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="준비"
@@ -1133,7 +1146,7 @@
     ><a href="/ko-kr/trident-2204/trident-use/ontap-nas.html">
         <div class="na-navbar-padding"> ONTAP NAS 드라이버를 사용하여 백엔드를 구성합니다</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="준비"
@@ -1198,7 +1211,7 @@
     ><a href="/ko-kr/trident-2204/trident-use/vol-operations.html">
         <div class="na-navbar-padding"> 볼륨 작업을 수행합니다</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="CSI 토폴로지를 사용합니다"
@@ -1256,7 +1269,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Docker를 위한 Astra Trident</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="배포를 위한 사전 요구 사항"
@@ -1286,7 +1299,7 @@
     ><a href="/ko-kr/trident-2204/trident-docker/volumes-docker.html">
         <div class="na-navbar-padding"> 볼륨 작업</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="드라이버별 볼륨 옵션"
@@ -1351,7 +1364,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> 모범 사례 및 권장사항</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="구축"
@@ -1395,7 +1408,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> 참조하십시오</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="Astra Trident 포트"
@@ -1463,6 +1476,7 @@
 </script>
 <!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
 <script>$("li.active").parents('li').toggleClass("active");</script>
+<script>$("#mysidebar li.active").parents('ul').css("display","block");</script>
 
 
   </div>
@@ -1518,7 +1532,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-08-02 11:27:14 +0000">08/02/2022</time>
+    <time datetime="2022-11-09 17:57:58 +0000">11/09/2022</time>
     
   
 
@@ -1568,7 +1582,7 @@
 <div class="ulist">
 <ul>
 <li>
-<p>생성할 개체의 JSON 구성이 필요합니다. 각 개체 유형의 사양은 을 참조하십시오 <a href="tridentctl.html">"트리덴ctl의 명령과 옵션"</a>.</p>
+<p>생성할 개체의 JSON 구성이 필요합니다. 각 개체 유형의 사양은 을 참조하십시오 <a href="tridentctl.html">"ce87eb03803d5633c163541464e9e7f2"</a>.</p>
 </li>
 <li>
 <p>개체가 이미 있는 경우 동작이 달라집니다. backends는 기존 개체를 업데이트하지만 다른 모든 개체 형식은 작업에 실패합니다.</p>
@@ -1590,13 +1604,13 @@
 <img src="/us-en/trident-2204/images/note.svg" alt="참고">
 </td>
 <td class="content">
-백엔드 또는 스토리지 클래스와 연결된 볼륨은 계속 존재하므로 별도로 삭제해야 합니다. 자세한 내용은 을 참조하십시오 <a href="tridentctl.html">"트리덴ctl의 명령과 옵션"</a>.
+백엔드 또는 스토리지 클래스와 연결된 볼륨은 계속 존재하므로 별도로 삭제해야 합니다. 자세한 내용은 을 참조하십시오 <a href="tridentctl.html">"ce87eb03803d5633c163541464e9e7f2"</a>.
 </td>
 </tr>
 </table>
 </div>
 <div class="paragraph">
-<p>이러한 API의 호출 방법에 대한 예제를 보려면 debug("-d") 플래그를 전달하십시오. 자세한 내용은 을 참조하십시오 <a href="tridentctl.html">"트리덴ctl의 명령과 옵션"</a>.</p>
+<p>이러한 API의 호출 방법에 대한 예제를 보려면 debug("-d") 플래그를 전달하십시오. 자세한 내용은 을 참조하십시오 <a href="tridentctl.html">"ce87eb03803d5633c163541464e9e7f2"</a>.</p>
 </div>
 </div>
 </div>
@@ -1637,11 +1651,7 @@
         <div class="n-footer__copyright">
           <ul class="n-footer__copyright-list">
             <li class="n-footer__copyright-link">
-              <span class="n-footer__fine-print">웹 사이트에 대한 피드백이 있으십니까?</span>
-              <a target="_self" href="javascript:netapp_mailto()">의견을 공유해 주십시오</a>
-            </li>
-            <li class="n-footer__copyright-link">
-              <a href="https://docs.netapp.com/ko-kr/announcements/">공지 사항</a>
+              <a target="_self" href="javascript:netapp_mailto()">이 페이지에 대한 피드백 보내기</a>
             </li>
           </ul>
         </div>
