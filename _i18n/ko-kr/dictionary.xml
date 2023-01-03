@@ -3006,20 +3006,15 @@
   <block id="2a778cf7220cdde142651975e1bcd90f" category="paragraph">가상 풀 목록 외부에서 지정된 모든 측면은 백엔드에 대해 전역적이며 모든 가상 풀에 적용되지만, 각 가상 풀은 하나 이상의 측면을 개별적으로 지정할 수 있습니다(백엔드-글로벌 측면 재정의).</block>
   <block id="6aefc2a02fa1ec1f6ac8e9dbd5104efe" category="admonition">가상 스토리지 풀을 정의할 때 백엔드 정의에서 기존 가상 풀의 순서를 재정렬하지 마십시오. 또한 기존 가상 풀의 속성을 편집/수정하고 대신 새 가상 풀을 정의하는 것이 좋습니다.</block>
   <block id="5a53576f0ba98311e845ad0243bed6b7" category="paragraph">대부분의 측면은 백엔드 관련 용어로 지정됩니다. 결정적으로, 종횡값은 백엔드 드라이버의 외부에 노출되지 않으며 'torageClaes'에서 일치시킬 수 없습니다. 대신 관리자는 각 가상 풀에 대해 하나 이상의 레이블을 정의합니다. 각 레이블은 키, 즉 값 쌍이며 레이블은 고유한 백엔드에서 공통일 수 있습니다. 측면과 마찬가지로 레이블을 풀별로 지정하거나 백엔드에 대해 전역으로 지정할 수 있습니다. 미리 정의된 이름과 값이 있는 측면과 달리 관리자는 필요에 따라 레이블 키와 값을 정의할 수 있습니다.</block>
-  <block id="a4d6bfb65b6541e04772c0d5180e726e" category="paragraph">'torageClass'는 선택기 매개 변수 내의 레이블을 참조하여 사용할 가상 풀을 식별합니다. 가상 풀 선택기는 6개의 연산자를 지원합니다.</block>
   <block id="e1b3ec89ead7f83a9245ed5c9cacfdbf" category="cell">운영자</block>
   <block id="499badcb6f450c7f46c51d873eb84286" category="cell">`='</block>
   <block id="354653142ec321459dfd6d71444e992e" category="cell">성능 = 프리미엄</block>
-  <block id="d2c49c25d96d87e40bc641b9d5302b36" category="cell">풀의 레이블 값이 일치해야 합니다</block>
   <block id="5a5292b0a0d0379f0f1b12801b09b266" category="cell">`!='</block>
   <block id="eccde6822783bd75209c9b6a2d357f6c" category="cell">성능!=최고</block>
-  <block id="2944853a5f146abd2671adbecd5c25a3" category="cell">풀의 레이블 값이 일치하지 않아야 합니다</block>
   <block id="ae2bef277194f73d24a36a78009aac1e" category="cell">"IN"입니다</block>
   <block id="f8cf8c23afb5459dbf7c24b685caf85b" category="cell">위치(동쪽, 서쪽)</block>
-  <block id="26aac934d614b1b3e5db46d8fc664ec6" category="cell">풀의 레이블 값은 값 집합에 있어야 합니다</block>
   <block id="1a031eecbce49366e550273b9321b909" category="cell">노신입니다</block>
   <block id="b5585f3f9b45f391fee5dd15e6516450" category="cell">성능 노트(실버, 브론즈)</block>
-  <block id="499fec8ad2646f2de982559111e26a4c" category="cell">풀의 레이블 값은 b가 아니어야 합니다</block>
   <block id="d00888bc1409d1c598b90af117bd3551" category="summary">Astra Trident의 프로비저닝에는 두 가지 주요 단계가 있습니다. 첫 번째 단계에서는 스토리지 클래스를 적절한 백엔드 스토리지 풀 세트와 연결하고 용량 할당 전에 필요한 준비 작업으로 수행됩니다. 두 번째 단계에서는 볼륨 생성 자체를 포함하며 보류 중인 볼륨의 스토리지 클래스와 연결된 스토리지 풀에서 스토리지 풀을 선택해야 합니다.</block>
   <block id="89c3bcf0ecc1114f8d19734d9156cb40" category="doc">프로비저닝</block>
   <block id="2bd42f922a8c0b54b90557eba2071a76" category="paragraph">백엔드 스토리지 풀을 스토리지 클래스와 연결하려면 스토리지 클래스의 요청된 속성과 해당 'toragePools', 'additionalStoragePools' 및 'excludeStoragePools' 목록이 모두 필요합니다. 스토리지 클래스를 생성할 때 Trident는 각 백엔드에서 제공하는 특성과 풀을 스토리지 클래스에서 요청한 속성과 비교합니다. 스토리지 풀의 속성과 이름이 요청된 모든 속성 및 풀 이름과 일치하면 Astra Trident는 해당 스토리지 클래스에 적합한 스토리지 풀 세트에 해당 스토리지 풀을 추가합니다. 또한 Astra Trident는 "additionalStoragePools" 목록에 나열된 모든 스토리지 풀을 해당 집합에 추가합니다. 이는 특성이 스토리지 클래스의 요청된 속성 중 일부 또는 전부를 충족하지 못하는 경우에도 마찬가지입니다. 스토리지 클래스에 사용할 스토리지 풀을 재정의하고 제거하려면 'excludeStoragePools' 목록을 사용해야 합니다. Astra Trident는 새 백엔드를 추가할 때마다 유사한 프로세스를 수행하여 스토리지 풀이 기존 스토리지 클래스의 풀을 충족하는지 확인하고 제외로 표시된 항목을 제거합니다.</block>
@@ -3123,4 +3118,16 @@
   <block id="b1d2d86c217e78dcc1bee62d74d3346c" category="section-title">3단계: 작성<block ref="ae61bf6af1a7406b62c72a4bef1ab62d" prefix=" " category="inline-code"></block> Trident를 설치합니다</block>
   <block id="ad9d572821da9bfff3397f2d3260509d" category="list-text">K8s.GCR.IO/SIG-스토리지/CSI-공급자:v3.1.0</block>
   <block id="bde15093cb0074588628726a59cb0098" category="list-text">K8s.GCR.IO/SIG-storage/CSI-snapshotter:v5.0.1</block>
+  <block id="758ef9050bcb89a046f8b79d56db9490" category="paragraph">A<block ref="e1e2a331ab1d8dccfea06fc8e04e2f5d" prefix=" " category="inline-code"></block> 선택기 매개 변수 내의 레이블을 참조하여 사용할 가상 풀을 식별합니다. 가상 풀 선택기는 다음 연산자를 지원합니다.</block>
+  <block id="3b64653c97a388d828849314b6a1b383" category="cell">풀의 레이블 값은 다음과 같아야 합니다.</block>
+  <block id="6da89265a9a8b0b28eb4946bb2ec0c6d" category="cell">일치</block>
+  <block id="ecf92052d55345fee4602d9eb8c22063" category="cell">일치하지 않습니다</block>
+  <block id="c6c1caf73b0f83d807abe5a717014ab7" category="cell">값 집합에 있어야 합니다</block>
+  <block id="8daf6b016f4033d59900c23f162c0f73" category="cell">값 집합에 있지 않습니다</block>
+  <block id="c6bfba38b789fec8271d1d1496a9ee59" category="cell"><block ref="42538adbdb6240b2b083a000a615d5bd" prefix="" category="inline-code"></block></block>
+  <block id="152f5dc0f7ac734f8e8ee17d4a482462" category="cell">보호</block>
+  <block id="7b532e697a35209f3df3956577cc3d9c" category="cell">모든 값과 함께 존재합니다</block>
+  <block id="eb0254f1d0a82e646c239d4d2e2f83ac" category="cell"><block ref="f65e5ff2a1bb1af969dccabe7dcd5cdd" prefix="" category="inline-code"></block></block>
+  <block id="67a3b723b2d9024808eb2c6e686d00a0" category="cell">! 보호</block>
+  <block id="1fde97909b90bb329db2062f7744bd45" category="cell">존재하지 않습니다</block>
 </blocks>
