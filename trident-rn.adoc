@@ -29,13 +29,13 @@ IMPORTANT: 이전 Trident 릴리스에서 업그레이드하고 Azure NetApp Fil
 
 === 수정
 
-* iSCSI 이니시에이터 이름의 구문 분석 기능이 향상되었습니다. (문제[#681](https://github.com/NetApp/trident/issues/681))[]
-* CSI 스토리지 클래스 매개 변수가 허용되지 않는 문제를 해결했습니다. (문제[#598](https://github.com/NetApp/trident/issues/598))[]
-* Trident CRD에서 중복 키 선언을 수정했습니다. (문제[#671](https://github.com/NetApp/trident/issues/671))[]
-* 부정확한 CSI 스냅샷 로그를 수정했습니다. (문제[#629](https://github.com/NetApp/trident/issues/629))[]
-* 삭제된 노드에서 볼륨 게시를 취소하는 문제 해결 (문제[#691](https://github.com/NetApp/trident/issues/691))[]
-* 블록 디바이스에서 파일 시스템 불일치를 처리하는 기능이 추가되었습니다. (문제[#656](https://github.com/NetApp/trident/issues/656))[]
-* 설치 중 'imageRegistry' 플래그를 설정할 때 자동 지원 이미지를 가져오는 문제가 해결되었습니다. (문제[#715](https://github.com/NetApp/trident/issues/715))[]
+* iSCSI 이니시에이터 이름의 구문 분석 기능이 향상되었습니다. (문제[#681]
+* CSI 스토리지 클래스 매개 변수가 허용되지 않는 문제를 해결했습니다. (문제[#598]
+* Trident CRD에서 중복 키 선언을 수정했습니다. (문제[#671]
+* 부정확한 CSI 스냅샷 로그를 수정했습니다. (문제[#629]
+* 삭제된 노드에서 볼륨 게시를 취소하는 문제 해결 (문제[#691]
+* 블록 디바이스에서 파일 시스템 불일치를 처리하는 기능이 추가되었습니다. (문제[#656]
+* 설치 중 'imageRegistry' 플래그를 설정할 때 자동 지원 이미지를 가져오는 문제가 해결되었습니다. (문제[#715]
 * ANF 드라이버가 여러 내보내기 규칙을 사용하여 볼륨을 클론하지 못한 문제 해결
 
 
@@ -43,10 +43,10 @@ IMPORTANT: 이전 Trident 릴리스에서 업그레이드하고 Azure NetApp Fil
 
 === 향상된 기능
 
-* 이제 Trident의 보안 끝점에 대한 인바운드 연결에는 TLS 1.3 이상이 필요합니다. (문제[#698](https://github.com/NetApp/trident/issues/698))[]
+* 이제 Trident의 보안 끝점에 대한 인바운드 연결에는 TLS 1.3 이상이 필요합니다. (문제[#698]
 * 이제 Trident는 보안 엔드포인트의 응답에 HSTS 헤더를 추가합니다.
 * 이제 Trident는 Azure NetApp Files UNIX 사용 권한 기능을 자동으로 활성화하려고 시도합니다.
-* * Kubernetes *: Trident가 이제 시스템 노드 크리티컬 우선 순위 클래스에서 실행됩니다. (문제[#694](https://github.com/NetApp/trident/issues/694))[]
+* * Kubernetes *: Trident가 이제 시스템 노드 크리티컬 우선 순위 클래스에서 실행됩니다. (문제[#694]
 
 
 
