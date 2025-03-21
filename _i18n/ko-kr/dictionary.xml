@@ -3098,7 +3098,6 @@
   <block id="b6780b7b2561935ff862fe7126cde751" category="list-text"><block ref="b6780b7b2561935ff862fe7126cde751" category="inline-link-rx"></block></block>
   <block id="b9a641d903e611a87a5e68ac7fdb0b84" category="list-text">Trident AutoSupport는 개인 식별 정보(PII) 또는 개인 정보를 수집하거나 전송하지 않습니다. 에는 Trident 컨테이너 이미지 자체에 적용할 수 없는 가<block ref="173a360b412944768c2ab13e6c8fd1c7" category="inline-link-rx"></block> 포함되어 있습니다. 데이터 보안 및 신뢰에 대한 NetApp의 노력에 대해 더 자세히 알아볼 수<block ref="d3cc55401bc8303e01c6b0c43ba0733f" category="inline-link-rx"></block>있습니다.</block>
   <block id="6c0abaa198495bc62a07a25b5120401b" category="sidebar">Astra Trident는 NetApp에서 관리하는 오픈 소스 스토리지 공급자 및 오케스트레이터입니다. Docker 및 Kubernetes에서 관리하는 컨테이너식 애플리케이션을 위한 스토리지 볼륨을 생성할 수 있습니다. 패치 릴리스 변경 사항을 포함한 전체 릴리스 정보는 https://docs.netapp.com/us-en/trident/trident-rn.html. 를 참조하십시오</block>
-  <block id="dfc322d478fc59cd6375362d8dad7bc0" category="sidebar">Kubernetes 1.25에 대한 중요 정보</block>
   <block id="1fe917b01f9a3f87fa2d7d3b7643fac1" category="sidebar">FAQ 를 참조하십시오</block>
   <block id="312b0dc38b01ff32c1b2f5f81ee1ab2d" category="sidebar">Trident 연산자를 사용하여 배포합니다</block>
   <block id="6a693eb5cd23e4e5743663c7edc37aed" category="sidebar">Docker를 위한 Astra Trident 구축</block>
@@ -3110,4 +3109,5 @@
   <block id="874d8a5301794a9ca2aba132ac2460f3" category="sidebar">쿠버네티스 허브</block>
   <block id="d59c00abbeaf33a9a094b3a69c563405" category="sidebar">NetApp.IO를 참조하십시오</block>
   <block id="8f5cc6430613f1c12f36965050bb7197" category="sidebar">불화</block>
+  <block id="9aba1139ac0174f6067d723ab428d43a" category="sidebar">Kubernetes 1.24에 대한 중요 정보</block>
 </blocks>
