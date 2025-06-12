@@ -2481,7 +2481,6 @@
   <block id="d0b19d36be2c5f16e9aef46c8a452d3d" category="paragraph">NetApp 소유 특허 목록은 다음 사이트에서 확인할 수 있습니다.</block>
   <block id="56c34c6410dd45c5cec44149ad0ce037" category="section-title">개인 정보 보호 정책</block>
   <block id="c0227cef6f07a8cd2ac72f2945b031aa" category="section-title">오픈 소스</block>
-  <block id="0172b29a9f5d94dc62ee592a98183f3b" category="paragraph">각 릴리스의 공지 파일에서 Astra Trident용 NetApp 소프트웨어에 사용된 타사 저작권 및 라이센스를 검토할 수 있습니다<block ref="4a3c8c5a408c6db1c44c04391a8a0a2f" category="inline-link-rx"></block>.</block>
   <block id="e20acf6d4b1275a0b5d2eb01c845adff" category="summary">NetApp은 다양한 방법으로 Trident를 지원합니다. Slack 채널과 같은 다양한 무료 셀프 지원 옵션을 24x7 이용할 수 있습니다.</block>
   <block id="db5eb84117d06047c97c9a0191b5fffe" category="doc">지원</block>
   <block id="14340f3a4eb25a54f8446036d807d7c8" category="paragraph">Astra Trident는 공식적으로 지원되는 NetApp 프로젝트입니다. 표준 메커니즘을 사용하여 NetApp에 연락하면 필요한 엔터프라이즈급 지원을 받을 수 있습니다.</block>
@@ -3110,4 +3109,6 @@
   <block id="d59c00abbeaf33a9a094b3a69c563405" category="sidebar">NetApp.IO를 참조하십시오</block>
   <block id="8f5cc6430613f1c12f36965050bb7197" category="sidebar">불화</block>
   <block id="9aba1139ac0174f6067d723ab428d43a" category="sidebar">Kubernetes 1.24에 대한 중요 정보</block>
+  <block id="9b73989307c1975dfa4d5e1581e4afe8" category="paragraph">통지 파일은 NetApp 소프트웨어에 사용된 타사의 저작권 및 라이센스에 대한 정보를 제공합니다.</block>
+  <block id="b2c5fe74ce5fe4b418e2c888873cdad2" category="paragraph"><block ref="6cd62921a12aa45126e024256eb76da4" category="inline-link-rx"></block>..</block>
 </blocks>
